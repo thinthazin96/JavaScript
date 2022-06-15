@@ -91,3 +91,6 @@ function welcome(){
     console.log(`Welcome ${name}`)
 }
 welcome()
+
+document.querySelector("#box1").textContent = "Hello <b>DOM</b>"
+document.querySelector("#box2").innerHTML = "Hello <b>DOM</b>"
