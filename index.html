@@ -6,14 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+    <style>
+        #box{
+            position: relative;
+            width: 800px;
+            height: 30px;
+            padding: 10px;
+            background: skyblue;
+            border: 5px solid darkblue;
+        }
+        #ball {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: red;
+        }
+
+    </style>
 <body>
-    <div id="box1">
+    <div id="box">
+        <div id="ball"></div>
+    </div>
+
+    <button onClick="start()">Start</button>
+	<button onClick="stop()">Stop</button>
+    <!-- <div id="box1">
         Box One Content
     </div>
     <div id="box2">
         Box Two Content
-    </div>
+    </div> -->
     
-    <script src="function.js"></script>
+    <!-- <script src="function.js"></script> -->
+    <script>
+        let ball = document.querySelector("#ball")
+        let left = 0
+        let direction = "right"
+        let interval = setInterval(move, 10)
+
+        function move() {
+            if(direction === "right") {
+                left += 1 /* Move left 1px every 10 milliseconds */
+                if(left > 790) direction = "left" /*bounce back to left if it reach element width*/
+            }else {
+                left -= 1 /* Move back left 1px every 10 milliseconds */
+                if(left < 1) direction = "right" /*bounce back to right if it reach element width*/
+            }
+            
+            ball.style.left = `${left}px`
+        }
+        
+        function start(){
+            interval = setInterval(move, 10)
+        }
+
+        function stop(){
+            clearInterval(interval)
+        }
+    </script>
 </body>
 </html>
