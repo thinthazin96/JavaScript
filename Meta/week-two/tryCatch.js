@@ -18,4 +18,51 @@ Using try and catch block JS doesn't stop although it found error.
 // console.log("My program doesn't stop.")
 
 console.log("Converting to base 2: ", (10).toString(2));
-console.log("Converting to base 8: ", (10).toString(8))
+console.log("Converting to base 8: ", (10).toString(8));
+console.log("---------------------------------------------------------")
+
+function addTwoNumbers(a,b){
+    try{
+      if (typeof(a) != 'number'){
+        throw new ReferenceError("The firsts argument is not a number.");
+      }
+      else if(typeof(b) != 'number'){
+        throw new ReferenceError("The second argument is not a number.")
+      }
+      else{
+        console.log(a+b)
+      }
+    }catch(err){
+      console.log("Error!",err);
+    }
+  }
+addTwoNumbers(5, "5");
+console.log("It still works");
+console.log("---------------------------------------------------------")
+
+// Defensive Programming 
+
+function letterFinder(word, match) {
+    
+        var condition1 = (typeof(word) == 'string' && word.length >= 2)
+        var condition2 = (typeof(match) == 'string' && match.length == 1)
+        if(condition1  && condition2){
+            for(var i = 0; i < word.length; i++) {
+                if(word[i] == match) {
+                    console.log('Found the', match, 'at', i)
+                }else {
+                    console.log('---No match found at', i)
+                }
+            }
+        }else{
+            console.log("Please pass correct arguments to the function. ")
+        }
+}
+
+letterFinder([],[])        //Fail case
+letterFinder("cat", "c"); //Passing case
+console.log("---------------------------------------------------------")
+
+var result = null;
+console.log(result);// output: null
+console.log("---------------------------------------------------------")
