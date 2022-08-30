@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram id="povbmpBUhszI0vvP6ngu" name="Page-1">
+        <mxGraphModel dx="659" dy="552" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="12" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Animal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="70" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Cat" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="130" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Bird" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="130" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="House Cat" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="200" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Tiger" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="200" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Parrot" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="200" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;source sans pro&amp;quot;, arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline; float: none;&quot;&gt;The&amp;nbsp;&lt;/span&gt;&lt;var style=&quot;box-sizing: border-box; background-color: rgb(229, 231, 232); font-family: courier, &amp;quot;courier new&amp;quot;, monospace; font-size: 0.95em; font-style: normal; font-weight: bold; color: rgb(31, 31, 31); letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;extends&lt;/var&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;source sans pro&amp;quot;, arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline; float: none;&quot;&gt;&amp;nbsp;keyword allows me to inherit from an existing class.&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="280" width="470" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Animal" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="45" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="class Animal{ }" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="19">
+                    <mxGeometry y="25" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Cat" style="swimlane;" vertex="1" parent="19">
+                    <mxGeometry x="25" y="55" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="class Cat &lt;b&gt;extends&lt;/b&gt; Animal{ }" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="21">
+                    <mxGeometry x="2.5" y="30" width="155" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;source sans pro&amp;quot;, arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline; float: none;&quot;&gt;The&amp;nbsp;&lt;/span&gt;&lt;var style=&quot;box-sizing: border-box; background-color: rgb(229, 231, 232); font-family: courier, &amp;quot;courier new&amp;quot;, monospace; font-size: 0.95em; font-style: normal; font-weight: bold; color: rgb(31, 31, 31); letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px;&quot;&gt;super&lt;/var&gt;&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;source sans pro&amp;quot;, arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline; float: none;&quot;&gt;&amp;nbsp;keyword allows me to &quot;borrow&quot; functionality from a super-class, in a sub-class. &lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="340" width="550" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
