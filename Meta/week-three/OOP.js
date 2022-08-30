@@ -127,9 +127,10 @@ train4.getSelf(); // Train {color: 'red', lightsOn: true}
 train4.getPrototype(); // {constructor: f, toggleLights: f, ligthsStatus: f, getSelf: f, getPrototype: f}
 console.log("---------------------------------------------------------")
 
+//inherit from Train class
 class HighSpeedTrain extends Train{
     constructor(passengers, highSpeedOn, color, lightsOn){
-        super(color, lightsOn);
+        super(color, lightsOn); //take the properties from Train class
         this.passengers = passengers;
         this.highSpeedOn = highSpeedOn;
     }
@@ -143,6 +144,64 @@ class HighSpeedTrain extends Train{
         console.log('Lights are 100% operational.');
     }
 }
+var myFirstTrain = new Train('red', false);
+console.log(myFirstTrain); // Train {color: 'red', lightsOn: false}
+var mySecondTrain = new Train('blue', false);
+var myThirdTrain = new Train('blue', false);
 
+var train5 = new Train('blue', false);
 var highSpeed1 = new HighSpeedTrain(200, false, 'green', false);
-highSpeed1.toggleLights();
+
+train5.toggleLights(); // undefined
+train5.lightsStatus(); // Lights on? true
+highSpeed1.toggleLights(); // Lights on? true, Lights are 100% operational.
+console.log("---------------------------------------------------------")
+
+class StationaryBike {
+    constructor(position, gears) {
+        this.position = position
+        this.gears = gears
+    }
+}
+
+class Treadmill {
+    constructor(position, modes) {
+        this.position = position
+        this.modes = modes
+    }
+}
+
+class Gym {
+    constructor(openHrs, stationaryBikePos, treadmillPos) {
+        this.openHrs = openHrs
+        this.stationaryBike = new StationaryBike(stationaryBikePos, 8)
+        this.treadmill = new Treadmill(treadmillPos, 5)
+    }
+}
+
+var boxingGym = new Gym("7-22", "right corner", "left corner")
+
+console.log(boxingGym.openHrs) //
+console.log(boxingGym.stationaryBike) //
+console.log(boxingGym.treadmill) //
+console.log("---------------------------------------------------------")
+
+//Default Parameters
+class WithDefaultParams {
+    constructor(num1 = 1, num2 = 2, num3 = 3, string1 = "Result:", bool1 = true) {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.num3 = num3;
+        this.string1 = string1;
+        this.bool1 = bool1;
+    }
+    calculate() {
+        if(this.bool1) {
+            console.log(this.string1, this.num1 + this.num2 + this.num3);
+            return;
+        }
+        return "The value of bool1 is incorrect"
+    }
+}
+var better = new WithDefaultParams();
+better.calculate(); // Result: 6
